@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Recipe Book</h2>
+        <p>Discover delicious recipes from around the world!</p>
+        <div class="home-gallery">
+            <img src="https://i.pinimg.com/originals/eb/07/fb/eb07fbadd098d0c1b4455daae8025210.jpg" alt="Delicious Dish 1">
+            <img src="https://i.pinimg.com/originals/28/6a/ed/286aedcacad6d3836b928133cb7e98df.jpg" alt="Delicious Dish 2">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2020/03/Berry-Cool-Cream-and-Pretzel-Pie_EXPS_TOHJJ20_242812_E02_05_6b.jpg" alt="Delicious Dish 3">
+        </div>
+    </main>
+    <main>
+        <h2>Our Delicious Recipes</h2>
+
+        <section class="recipe-card">
+            <h3>Pancakes</h3>
+            <img src="https://www.olgainthekitchen.com/wp-content/uploads/2017/10/Buttermilk-Pancakes-Recipe.jpg" alt="Pancakes">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td>2 cups</td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>1 cup</td>
+                </tr>
+            </table>
+            <h4>Instructions</h4>
+            <ol>
+                <li>Mix all ingredients together.</li>
+                <li>Heat a pan and pour the batter.</li>
+                <li>Cook until golden brown.</li>
+            </ol>
+        </section>
+
+        <section class="recipe-card">
+            <h3>Spaghetti Bolognese</h3>
+            <img src="https://www.thechunkychef.com/wp-content/uploads/2015/02/Spaghetti-Bolognese-Sauce-2.jpg" alt="Spaghetti Bolognese">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Spaghetti</td>
+                    <td>200g</td>
+                </tr>
+                <tr>
+                    <td>Ground Beef</td>
+                    <td>300g</td>
+                </tr>
+                <tr>
+                    <td>Tomato Sauce</td>
+                    <td>1 cup</td>
+                </tr>
+            </table>
+            <h4>Instructions</h4>
+            <ol>
+                <li>Cook spaghetti according to package instructions.</li>
+                <li>Brown the beef in a pan and add the tomato sauce.</li>
+                <li>Combine the spaghetti with the sauce and serve.</li>
+            </ol>
+        </section>
+
+    </main>
+    <main>
+        <h2>Feedback</h2>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="success-message"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe Book. All rights reserved.</p>
+    </footer>
+</body>
+</html>
